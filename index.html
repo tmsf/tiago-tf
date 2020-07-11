@@ -1,15 +1,13 @@
-<meta name="description" content="home page">
-<meta name="author" content="Tiago Fernandes">
 <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 5.0"/>
 <link rel='stylesheet' href='/assets/styles/main.css' type='text/css'>
 <html lang="en">
   <head>
-    <title>Tiago Fernandes</title>
+    <title>Tiago Fernandes - a software engineer</title>
   </head>
   <main>
     <section>
       <h1 class='title font-smoothing'>Tiago Fernandes</h1>
-      <h2 class='subtitle font-smoothing'>software developer</h2>
+      <h2 class='subtitle font-smoothing'>a software engineer.</h2>
     </section>
     <section class="module">
       <div class="navcontainer">
@@ -17,26 +15,36 @@
           <li>
             <a onclick="toggle_visibility('about');">about</a>
             <div class="container" id="about" style='display:none'>
-              <div>Since the beginning of my career I've been doing software
-                development in a myriad of technologies, such as <em>node/javascript</em>,
+              <div>
+                Since the beginning of my professional career I followed a product focus approach to my daily work. This gave me a deep knowledge on the business areas where I've worked, mainly Gaming Industry and Healthcare industry, both on the online contexts.
+              </div>
+              <div>
+                I've been working on cross-functional teams (PO, Designers, Engineers, QA, Data, Marketing) where I help designing technical solutions that help us reach our goals as a company. 
+              </div>
+              <div>
+                I've discovered the passion for mentoring, and I aim to any mentee to improve its technical and soft skills, such as communication and Abstract thinking. Apart for my daily work I tend to help on collaborative efforts cross-company such as contributing or creating to shared tools that will help different development teams, and I'm an active voice on multiple Engineering guilds.
+              </div>
+              <div>
+                I consider myself to be a Generalist Software engineer, I try to amass knowledge around good practices, methodologies, and design patterns, rather than specifics of any particular language or technology. In this context suggesting the  "right tool for the job" will be more dependent on the organisation needs and the company's accumulated knowledge, than any factors such as "cool" or "faster".
+              </div>
+              <div>I've work with a myriad of technologies, such as <em>node/javascript</em>,
                 <em>ruby on rails</em>, <em>elixir/erlang</em>, <em>rust</em>,
                 <em>.NET MVC</em>, and <em>php</em>.
-              </div>
-              <div>I volunteer at
-                <a href="https://babelpuntodeencuentro.org/" target=_blank rel="noopener"> Babel Punto de Encuentro </a>
-                as web developer, a small but energetic Barcelona based NGO.
-                They run a school in Senegal's capital Dakar, and do some great
-                community work in Barcelona as well, providing counselling and
-                psychological help to people who are in a vulnerable situation.
-              </div>
+              </div>              
             </div>
           </li>
           <li>
             <a onclick="toggle_visibility('bio');">bio</a>
             <div class="container" id="bio" style='display:none'>
-              <div> Portuguese currently living in Barcelona. I have a MSc. in Computer Science,
-                with specialization on Artificial Inteligence and Cryptography.
-                My dissertation's subject was <a href="https://hdl.handle.net/1822/27820" target=_blank rel="noopener"> weak secret key-agreement protocols</a>.
+              <div>An european citizen born in Portugal, currently living in Barcelona. I have a BSc. and a MSc. in Computer Science from <a href="https://www.uminho.pt/en" target=_blank rel="noopener">Minho University (Portugal)</a>.
+                My MSc.'s specialization was on Artificial Inteligence and Cryptography, and my dissertation's subject was <a href="http://hdl.handle.net/1822/27820" target=_blank rel="noopener"> weak secret key-agreement protocols</a>.
+              </div>
+              <div>I volunteer at
+                <a href="https://babelpuntodeencuentro.org/" target=_blank rel="noopener"> Babel Punto de Encuentro </a>
+                as developer, a small but energetic Barcelona based NGO.
+                They run a school in Senegal's capital Dakar, and do some great
+                community work in Barcelona as well, providing counselling and
+                psychological help to people who are in a vulnerable situation.
               </div>
             </div>
           </li>
@@ -54,6 +62,31 @@
     </section>
   </main>
 </html>
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "url": "https://www.tiago.tf/",
+    "description": "Tiago Fernandes' Home Page",
+    "author": {
+      "@type": "Person",
+      "image": "https://avatars2.githubusercontent.com/u/846963",
+      "name": "Tiago Fernandes",
+      "jobTitle": {
+        "@type": "DefinedTerm",
+        "inDefinedTermSet": "https://targetjobs.co.uk/careers-advice/job-descriptions",
+        "termCode": "1043921-software-engineer-job-description",
+        "name": "Software engineer",
+        "url": "https://targetjobs.co.uk/careers-advice/job-descriptions/1043921-software-engineer-job-description"
+      },
+      "sameAs": [
+        "https://twitter.com/schroder",
+        "https://github.com/tmsf",
+        "https://www.linkedin.com/in/tmsfernandes"
+      ]
+    }
+  }
+</script>
 <script type="text/javascript">
     function toggle_visibility(id) {
        const e = document.getElementById(id);

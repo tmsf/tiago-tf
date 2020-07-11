@@ -65,14 +65,31 @@ div, h1{ color:black; }
   list-style-type: none;
 }
 
-.navcontainer li {
-  padding: 0em 0em .5em 0em;
-  /* list-style-type: none; */
-}
 .navcontainer ul li a {
   text-decoration: none;
   color: #000;
 }
+/* large devices and bigger screens */
+@media only screen and (min-width: 992px) {
+  .navcontainer li {
+    /* border: 5px solid red; */
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 991.98px) {
+  .navcontainer li {
+    /* border: 5px solid red; */
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .navcontainer li {
+    /* border: 5px solid red; */
+    width: 90%;
+  }
+}
+
 
 .navcontainer ul li a:hover {
   color: #fff;
