@@ -36,7 +36,6 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-
 .font-smoothing {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -51,6 +50,7 @@ time, mark, audio, video {
   padding: 1em 1em 1em 1.5em;
   font-size: 1.3em;
 }
+
 .copyright {
   padding: 0em 0em 0em 2.9em;
   font-size: 0.7em;
@@ -69,13 +69,14 @@ div, h1{ color:black; }
   text-decoration: none;
   color: #000;
 }
-/* large devices and bigger screens */
+
 @media only screen and (min-width: 992px) {
   .navcontainer li {
     /* border: 5px solid red; */
     width: 50%;
   }
 }
+
 @media only screen and (max-width: 991.98px) {
   .navcontainer li {
     /* border: 5px solid red; */
@@ -89,7 +90,6 @@ div, h1{ color:black; }
     width: 90%;
   }
 }
-
 
 .navcontainer ul li a:hover {
   color: #fff;
