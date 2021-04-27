@@ -6,8 +6,6 @@
   width: 100%;
 }
 
-.title {
-  /* padding: 1em 0em 0em 1em;
-  font-size: 2em; */
-  text-decoration: none;
+.title a {
+  color: black;
 }
