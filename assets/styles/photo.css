@@ -1,0 +1,13 @@
+.myphoto {
+  padding: 1em 5em 1em 5em;
+}
+
+.myphoto img {
+  width: 100%;
+}
+
+.title {
+  /* padding: 1em 0em 0em 1em;
+  font-size: 2em; */
+  text-decoration: none;
+}
