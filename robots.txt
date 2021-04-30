@@ -1,5 +1,3 @@
 User-agent: *
-
-Disallow: /photo.html
-
+Allow: *
 Sitemap: https://www.tiago.tf/sitemap.xml
