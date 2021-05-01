@@ -36,44 +36,46 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+html {
+  padding: 2em;
+}
+
 .font-smoothing {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 .title {
-  padding: 1em 0em 0em 1em;
   font-size: 2em;
 }
 
 .subtitle {
-  padding: 1em 1em 1em 1.5em;
+  padding: 1em 1em 1em 0em;
   font-size: 1.3em;
 }
 
 .copyright {
-  padding: 0em 0em 2.9em 2.9em;
+  padding: 1em 1em 1em 0em;
   font-size: 0.7em;
 }
 
 div, h1{ color:black; }
 
 .navcontainer ul {
-  padding: 0em 1em 1em 2em;
   list-style-type: none;
 }
 
 .container {
-  padding: 1em 0em 0em 1em;
+  padding: 1em;
   font-size: large;
 }
 
 .container div {
-  padding: 0em 0em 0.6em 0em;
+  padding: 0.5em 0em 0.5em 0em;
 }
 
-.navcontainer {
-  padding-bottom: 1em;
+.container-list {
+    padding: 0em 0em 0.5em 2em;
 }
 
 .navcontainer ul li a {
@@ -87,7 +89,7 @@ div, h1{ color:black; }
 }
 
 .navcontainer li {
-  padding: 0em 1em 0.5em 0em;
+  padding: 0em 0em 0.5em 0em;
 }
 
 .navcontainer-title {
