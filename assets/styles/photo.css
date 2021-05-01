@@ -1,7 +1,3 @@
-.myphoto {
-  padding: 1em 5em 1em 5em;
-}
-
 .myphoto img {
   width: 100%;
 }
@@ -13,4 +9,29 @@
 figcaption {
   padding: 0.5em;
   text-align: center;
+  padding-bottom: 2em;
+}
+
+@media only screen and (min-width: 1368px) {
+  .myphoto {
+    padding: 0em 6em 0em 6em;
+  }
+}
+
+@media only screen and (max-width: 1367.99px) {
+  .myphoto {
+    padding: 0em 4em 0em 4em;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .myphoto {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .myphoto {
+    padding: 0;
+  }
 }
