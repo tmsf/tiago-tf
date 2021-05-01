@@ -174,23 +174,34 @@ h1 {
   text-decoration: underline;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1368px) {
   .navcontainer li {
     /* border: 5px solid red; */
-    width: 50%;
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 1367.99px) {
+  .navcontainer li {
+    /* border: 5px solid green; */
+    width: 60%;
   }
 }
 
 @media only screen and (max-width: 991.98px) {
   .navcontainer li {
-    /* border: 5px solid red; */
+    /* border: 5px solid blue; */
     width: 80%;
   }
 }
 
 @media only screen and (max-width: 576px) {
   .navcontainer li {
-    /* border: 5px solid red; */
-    width: 90%;
+    /* border: 5px solid orange; */
+    width: 100%;
   }
+}
+
+.container {
+  border: 0.1px solid black;
 }
