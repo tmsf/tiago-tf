@@ -16,11 +16,11 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/assets/dist/favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
-
-
 <meta name="description" content="Tiago Fernandes' software engineer home page">
 <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 5.0" />
 <link rel="stylesheet" href="https://unpkg.com/@sakun/system.css@0.1.0/dist/system.css" />
+<link rel='stylesheet' href='/assets/styles/custom-mac-design.css' type='text/css'>
+
 <html lang="en">
 
 <head>
@@ -41,16 +41,24 @@
 
       </div>
       <div class="window-pane">
-        <!-- whole content -->
+        <div class='link-buttons'>
+          <a class="btn navcontainer-title" href='mailto:hello@tiago.tf' target='_blank' rel="noopener">mail</a>
+          <a class="btn navcontainer-title" href='https://github.com/tmsf' target='_blank' rel="noopener">github</a>
+          <a class="btn navcontainer-title" href='https://twitter.com/schroder' target='_blank' rel="noopener">twitter</a>
+          <a class="btn navcontainer-title" href='https://www.linkedin.com/in/tmsfernandes' target='_blank' rel="noopener">linkedin</a>
+          <a class="btn navcontainer-title" href='/photo.html'> photo </a>
+        </div>
+      </div>
+      <div class="window-pane-main">
         <div class="window">
-          <div class="title-bar" onclick="toggle_visibility('about2');"> 
+          <div class="title-bar" onclick="toggle_visibility('about');"> 
             <button class="close"></button>
             <h1 class="title">about</h1>
             <button class="resize"></button>
           </div>
           <div class="separator"></div>
           
-          <div class="window-pane" id="about2" style='display:none'>
+          <div class="window-pane" id="about" style='display:none'>
             <div>
               Since the beginning of my professional career as a Software engineer I followed a product focus approach
               to my daily work. This gave me a deep knowledge on the business areas where I've worked, mainly Gaming
@@ -117,14 +125,13 @@
         </div>
     
         <div class="window">
-          <div class="title-bar" onclick="toggle_visibility('bio2');"> 
+          <div class="title-bar" onclick="toggle_visibility('bio');"> 
             <button class="close" ></button>
             <h1 class="title">bio</h1>
             <button class="resize"></button>
           </div>
-          <div class="separator"></div>
-          
-          <div class="window-pane" id="bio2" style='display:none'>
+          <div class="separator"></div>        
+          <div class="window-pane" id="bio" style='display:none'>
             <div>An European citizen born in Portugal. Currently living in Barcelona.
             </div>
             <div>
@@ -143,48 +150,18 @@
             </div>
           </div>
         </div>
-
-
-        <div class="window">
-          <div class="title-bar"> 
-            <button class="close"></button>
-            <h1 class="title">links</h1>
-            <button class="resize"></button>
-          </div>
-          <div class="separator"></div>
-          
-          <div class="window-pane">
-            <div class='center'>
-              <a class="btn navcontainer-title" href='mailto:hello@tiago.tf' target='_blank' rel="noopener">mail</a>
-              <a class="btn navcontainer-title" href='https://github.com/tmsf' target='_blank' rel="noopener">github</a>
-              <a class="btn navcontainer-title" href='https://twitter.com/schroder' target='_blank' rel="noopener">twitter</a>
-              <a class="btn navcontainer-title" href='https://www.linkedin.com/in/tmsfernandes' target='_blank' rel="noopener">linkedin</a>
-              <a class="btn navcontainer-title" href='/photo.html'> photo </a>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-
-      <div>
-        
       </div>
     </div>
-    <div class="standard-dialog ">
-      <!-- <p class="dialog-text">The Macintosh Finder, Version 1.0 (18 Jan 84)</p> -->
-      <p class="dialog-text">copyright © 2016-2022, Tiago Fernandes</p>
-    </div>
-    
-  </section>
-  <section class="module">
+    <div class="window">
+      <div class="copyright">
+        <p class="dialog-text">copyright © 2016-2022, Tiago Fernandes</p>
+      </div>
 
-    
-    <div class="navcontainer">
-      
-      
+      <div class="copyright">
+        <p class="dialog-text"><a href="https://sakofchit.github.io/system.css/" target=_blank rel="noopener">Theme</a> by <a href="https://twitter.com/sakofchit">Sakun</a> </p>
+      </div>
     </div>
   </section>
-  
 </main>
 
 </html>
