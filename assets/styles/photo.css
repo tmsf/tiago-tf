@@ -6,6 +6,9 @@
   color: black;
   text-decoration: none;
 }
+.title-link {
+  text-decoration: none;
+}
 
 .title a:hover {
   color: #fff;
