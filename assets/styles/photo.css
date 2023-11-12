@@ -3,19 +3,20 @@
 }
 
 .title a {
-  color: black;
+  color: var(--text-color);
   text-decoration: none;
 }
 
 .title a:hover {
-  color: #fff;
-  background-color: #000;
+  color: var(--inverted-text-color);
+  background-color: var(--inverted-background-color);
 }
 
 figcaption {
   padding: 0.5em;
   text-align: center;
   padding-bottom: 2em;
+  color: var(--text-color);
 }
 
 @media only screen and (min-width: 1368px) {
