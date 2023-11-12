@@ -1,4 +1,19 @@
-/* latin */
+:root {
+  --text-color: black;
+  --inverted-text-color: blue;
+  --background-color: white;
+  --border-color: black;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  --text-color: white;
+  --inverted-text-color: red;
+  --background-color: black;
+  --border-color: white;
+}
+
+
 @font-face {
   font-family: "Source Sans Pro";
   font-style: normal;
@@ -132,7 +147,7 @@ html {
 
 div,
 h1 {
-  color: black;
+  color: var(--text-color);
 }
 
 .navcontainer ul {
@@ -142,7 +157,7 @@ h1 {
 .container {
   padding: 1em;
   font-size: large;
-  border: 0.1px solid black;
+  border: 0.1px solid var(--border-color);
 }
 
 .container div {
@@ -155,12 +170,12 @@ h1 {
 
 .navcontainer ul li a {
   text-decoration: none;
-  color: #000;
+  color: var(--text-color);
 }
 
 .navcontainer ul li a:hover {
-  color: #fff;
-  background-color: #000;
+  color: var(--inverted-text-color);
+  background-color: var(--background-color);
 }
 
 .navcontainer li {
@@ -177,32 +192,29 @@ h1 {
 
 .mac-theme {
   text-decoration: none;
-  color: #000;
+  color: var(--text-color);
 }
+
 @media only screen and (min-width: 1368px) {
   .navcontainer li {
-    /* border: 5px solid red; */
     width: 40%;
   }
 }
 
 @media only screen and (max-width: 1367.99px) {
   .navcontainer li {
-    /* border: 5px solid green; */
     width: 60%;
   }
 }
 
 @media only screen and (max-width: 992px) {
   .navcontainer li {
-    /* border: 5px solid blue; */
     width: 80%;
   }
 }
 
 @media only screen and (max-width: 576px) {
   .navcontainer li {
-    /* border: 5px solid orange; */
     width: 100%;
   }
 }
