@@ -1,15 +1,17 @@
 :root {
   --text-color: black;
-  --inverted-text-color: blue;
+  --inverted-text-color: white;
   --background-color: white;
+  --inverted-background-color: black;
   --border-color: black;
 }
 
 /* Dark mode styles */
-body.dark-mode {
+.dark-mode {
   --text-color: white;
-  --inverted-text-color: red;
+  --inverted-text-color: black;
   --background-color: black;
+  --inverted-background-color: white;
   --border-color: white;
 }
 
@@ -28,7 +30,7 @@ body.dark-mode {
 * {
   font-family: "Source Sans Pro";
   /* ,sans-serif; */
-  background-color: grayscale;
+  background-color: var(--background-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -175,7 +177,7 @@ h1 {
 
 .navcontainer ul li a:hover {
   color: var(--inverted-text-color);
-  background-color: var(--background-color);
+  background-color: var(--inverted-background-color);
 }
 
 .navcontainer li {
