@@ -140,7 +140,7 @@
       <a class='mac-theme' href="/mac-os/index.html">Apple System 6 themed 🥚🐇.</a>
     </div>
     <div class='copyright'>
-      copyright © 2016-2023, Tiago Fernandes
+      copyright © 2016-2024, Tiago Fernandes
     </div>
   </section>
 </main>
@@ -165,39 +165,5 @@
     }
   }
 </script>
-<script>
-  // JavaScript to toggle dark mode
-  const html = document.documentElement;
-  const body = document.body
-  console.log("element", html)
-  const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
-  if (prefersDarkScheme.matches) {
-    html.classList.add("dark-mode");
-    body.classList.add("dark-mode");
-  } else {
-    html.classList.remove("dark-mode");
-    body.classList.remove("dark-mode");
-
-  }
-
-  // Listen for changes to the user's color scheme preference
-  prefersDarkScheme.addListener((event) => {
-        if (event.matches) {
-            html.classList.add("dark-mode");
-            body.classList.add("dark-mode");
-        } else {
-            html.classList.remove("dark-mode");
-            body.classList.remove("dark-mode");
-        }
-    });
-</script>
-<script type="text/javascript">
-  function toggle_visibility(id) {
-    const e = document.getElementById(id);
-    if (e.style.display == 'block')
-      e.style.display = 'none';
-    else
-      e.style.display = 'block';
-  }
-</script>
+<script src="./utils.js"></script>
