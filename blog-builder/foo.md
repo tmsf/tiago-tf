@@ -1,5 +1,5 @@
 # hello world
-
+ {{date}} {{time}} 
 here is some text
 
 
