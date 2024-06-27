@@ -1,3 +1,4 @@
 User-agent: *
 Disallow: /mac-os/*
+Disallow: /blog-builder/*
 Sitemap: https://www.tiago.tf/sitemap.xml
