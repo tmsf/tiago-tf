@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?><rss version="2.0"><channel><title>Tiago Fernandes - thoughts</title>
+        <link>http://www.tiago.tf/blog</link>
+        <description>Tiago Fernandes - thoughts</description>
+        <language>en-gb</language>
+        <lastBuildDate>Fri Jun 28 2024 20:48:16 GMT+0200 (Hora de verão da Europa Central)</lastBuildDate><item>
+            <title>should be the thrid</title>
+            <link>http://www.tiago.tf/blog/thrid_example</link>
+            <description>This is the description for the first article.</description>
+            <author>Tiago Fernandes</author>
+            <pubDate>28/06/2024, 18:41:27 CEST</pubDate>
+            <guid>http://www.tiago.tf/blog/thrid_example</guid>
+        </item>
+<item>
+            <title>should be the seconde</title>
+            <link>http://www.tiago.tf/blog/seconde_example</link>
+            <description>This is the description for the first article.</description>
+            <author>Tiago Fernandes</author>
+            <pubDate>27/06/2024, 22:48:27 CEST</pubDate>
+            <guid>http://www.tiago.tf/blog/seconde_example</guid>
+        </item>
+<item>
+            <title>heres a title</title>
+            <link>http://www.tiago.tf/blog/example</link>
+            <description>This is the description for the first article.</description>
+            <author>Tiago Fernandes</author>
+            <pubDate>27/06/2024, 21:06:45 CEST</pubDate>
+            <guid>http://www.tiago.tf/blog/example</guid>
+        </item></channel></rss>
