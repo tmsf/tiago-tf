@@ -39,17 +39,17 @@ const getMdMetadata = async (item) => {
     timeStyle: 'long',
     timeZone: 'Europe/Madrid',
   })
-  const modifiedDate = formatter.format(stats.mtime);
-  const createdDate = formatter.format(stats.birthtime);
-  // const modifiedDate = (stats.mtime);
-  // const createdDate = (stats.birthtime);
+  // const modifiedDate = formatter.format(stats.mtime);
+  // const createdDate = formatter.format(stats.birthtime);
+  const modifiedDate = (stats.mtime);
+  const createdDate = (stats.birthtime);
 
   // console.log(`File was last modified on: ${modifiedDate}`);
   // console.log(`File was created on: ${createdDate}`);
   // console.log("stats", stats);
   let data = fs.readFileSync(`./blog-builder/${item}`, "utf8");
-  data = data.concat(`\n\n originally published: ${createdDate}\n`);
-  data = data.concat(`\n last updated: ${modifiedDate} \n\n`);
+  data = data.concat(`\n\n originally published: ${formatter.format(createdDate)}\n`);
+  data = data.concat(`\n last updated: ${formatter.format(modifiedDate)} \n\n`);
   // console.log("data", data);
 
   const title = data.match(/^# (.*)$/m)[1];
@@ -79,10 +79,10 @@ const createSitemapBlog = (blogItems) => {
 
   const rssItems = blogItems.map((item) => {
     // console.log("item", item);
-    return `<url><loc>https://www.tiago.tf/blog/${item.file}.html</loc><lastmod>${item.modifiedDate}</lastmod></url>`;
+    return `<url><loc>https://www.tiago.tf/thoughts/${item.file}.html</loc><lastmod>${item.modifiedDate.toISOString()}</lastmod></url>`;
   }).join("\n");
 
-  fs.writeFileSync("./blog/sitemap.xml", sitemapDataHeader.concat(rssItems).concat(sitemapFooter));
+  fs.writeFileSync("./thoughts/sitemap.xml", sitemapDataHeader.concat(rssItems).concat(sitemapFooter));
 }
 
 const createRss = (blogItems) => {
@@ -90,25 +90,25 @@ const createRss = (blogItems) => {
   const sitemapFooter = `</channel></rss>`
 
   const headerData = `<title>Tiago Fernandes - thoughts</title>
-        <link>http://www.tiago.tf/blog</link>
+        <link>http://www.tiago.tf/thoughts</link>
         <description>Tiago Fernandes - thoughts</description>
         <language>en-gb</language>
-        <lastBuildDate>${new Date()}</lastBuildDate>`
+        <lastBuildDate>${new Date().toISOString()}</lastBuildDate>`
 
 
   const sitemapData = blogItems.map((item) => {
     // console.log("item", item);
     return `<item>
             <title>${item.title}</title>
-            <link>http://www.tiago.tf/blog/${item.file}</link>
+            <link>http://www.tiago.tf/thoughts/${item.file}</link>
             <description>This is the description for the first article.</description>
             <author>Tiago Fernandes</author>
-            <pubDate>${item.createdDate}</pubDate>
-            <guid>http://www.tiago.tf/blog/${item.file}</guid>
+            <pubDate>${item.createdDate.toISOString()}</pubDate>
+            <guid>http://www.tiago.tf/thoughts/${item.file}</guid>
         </item>`;
   }).join("\n");
 
-  fs.writeFileSync("./blog/rss.xml", sitemapDataHeader.concat(headerData).concat(sitemapData).concat(sitemapFooter));
+  fs.writeFileSync("./thoughts/rss.xml", sitemapDataHeader.concat(headerData).concat(sitemapData).concat(sitemapFooter));
 }
 
 const writeBlogItemsToHtml = (blogItems) => {
@@ -123,7 +123,7 @@ const writeBlogItemsToHtml = (blogItems) => {
 const writeMdToHtmlFile = (mdData, filename, template) => {
   let output = template.replace("{{markdown}}", markdownify(mdData));
   output = output.replace(/href="(.*)\.md"/g, 'href="$1.html"');
-  fs.writeFileSync(`./blog/${filename}.html`, output);
+  fs.writeFileSync(`./thoughts/${filename}.html`, output);
 }
 
 function markdownify(content) {
