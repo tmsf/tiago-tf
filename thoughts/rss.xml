@@ -2,13 +2,21 @@
         <link>http://www.tiago.tf/thoughts</link>
         <description>Tiago Fernandes - thoughts</description>
         <language>en-gb</language>
-        <lastBuildDate>2024-06-28T19:07:42.402Z</lastBuildDate><item>
-            <title>heres a title</title>
-            <link>http://www.tiago.tf/thoughts/example</link>
+        <lastBuildDate>2024-06-28T19:14:40.764Z</lastBuildDate><item>
+            <title>Heres the lastest post</title>
+            <link>http://www.tiago.tf/thoughts/2024-06-28-test-test</link>
             <description>This is the description for the first article.</description>
             <author>Tiago Fernandes</author>
-            <pubDate>2024-06-27T19:06:45.008Z</pubDate>
-            <guid>http://www.tiago.tf/thoughts/example</guid>
+            <pubDate>2024-06-28T19:14:24.988Z</pubDate>
+            <guid>http://www.tiago.tf/thoughts/2024-06-28-test-test</guid>
+        </item>
+<item>
+            <title>should be the thrid</title>
+            <link>http://www.tiago.tf/thoughts/thrid_example</link>
+            <description>This is the description for the first article.</description>
+            <author>Tiago Fernandes</author>
+            <pubDate>2024-06-28T16:41:27.111Z</pubDate>
+            <guid>http://www.tiago.tf/thoughts/thrid_example</guid>
         </item>
 <item>
             <title>should be the seconde</title>
@@ -19,10 +27,10 @@
             <guid>http://www.tiago.tf/thoughts/seconde_example</guid>
         </item>
 <item>
-            <title>should be the thrid</title>
-            <link>http://www.tiago.tf/thoughts/thrid_example</link>
+            <title>heres a title</title>
+            <link>http://www.tiago.tf/thoughts/example</link>
             <description>This is the description for the first article.</description>
             <author>Tiago Fernandes</author>
-            <pubDate>2024-06-28T16:41:27.111Z</pubDate>
-            <guid>http://www.tiago.tf/thoughts/thrid_example</guid>
+            <pubDate>2024-06-27T19:06:45.008Z</pubDate>
+            <guid>http://www.tiago.tf/thoughts/example</guid>
         </item></channel></rss>

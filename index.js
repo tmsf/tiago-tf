@@ -6,16 +6,16 @@ const init = async (sourceDir) => {
   await directory.forEach(async (filenameExt) => {
     if (filenameExt.endsWith(".md") && filenameExt !== "index.md") {
       // console.log("---", filenameExt);
-      const [title, data, file, createdDate, modifiedDate] = await getMdMetadata(filenameExt);
-      blogItems.push({ title, file, filenameExt, createdDate, modifiedDate, data });
+      const [title, data, file, createdDate, modifiedDate, stats] = await getMdMetadata(filenameExt);
+      blogItems.push({ title, file, filenameExt, createdDate, modifiedDate, data, stats });
     }
     // await organiseImage(item, sourceDir);
   });
 
   // Sort blog items by created date - newest first
   const sortedBlogItems = blogItems.sort((a, b) => {
-    return (new Date(b.createdDate) - new Date(a.createdDate));
-  }).reverse();
+    return (new Date(b.stats.birthtime) - new Date(a.stats.birthtime));
+  })//.reverse();
 
   // console.log("blogItems", sortedBlogItems);
 
@@ -46,9 +46,9 @@ const getMdMetadata = async (item) => {
   const modifiedDate = (stats.mtime);
   const createdDate = (stats.birthtime);
 
-  // console.log(`File was last modified on: ${modifiedDate}`);
-  // console.log(`File was created on: ${createdDate}`);
-  // console.log("stats", stats);
+  console.log(`File was last modified on: ${modifiedDate}`);
+  console.log(`File was created on: ${createdDate}`);
+  console.log("stats", stats);
   let data = fs.readFileSync(`./blog-builder/${item}`, "utf8");
   data = data.concat(`\n\n originally published: ${formatter.format(createdDate)}\n`);
   data = data.concat(`\n last updated: ${formatter.format(modifiedDate)} \n\n`);
@@ -58,7 +58,7 @@ const getMdMetadata = async (item) => {
   // console.log("title", title);
   const file = item.replace(".md", "");
   // console.log("makre--------", markdownify(data))
-  return [title, data, file, createdDate, modifiedDate];
+  return [title, data, file, createdDate, modifiedDate, stats];
 }
 
 const createIndexMd = (blogItems) => {
