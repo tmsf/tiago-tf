@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<url><loc>https://www.tiago.tf/blog/bar.html</loc><lastmod>2024-06-27 18:37:05 +0000</lastmod></url>
-<url><loc>https://www.tiago.tf/blog/foo.html</loc><lastmod>2024-06-27 17:51:19 +0000</lastmod></url>
-<url><loc>https://www.tiago.tf/blog/index.html</loc><lastmod>2024-06-27 17:53:06 +0000</lastmod></url>
-</urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"><url><loc>https://www.tiago.tf/blog/thrid_example.html</loc><lastmod>Friday 28 June 2024 at 18:41:42 CEST</lastmod></url>
+<url><loc>https://www.tiago.tf/blog/seconde_example.html</loc><lastmod>Thursday 27 June 2024 at 22:48:40 CEST</lastmod></url>
+<url><loc>https://www.tiago.tf/blog/example.html</loc><lastmod>Thursday 27 June 2024 at 21:07:04 CEST</lastmod></url></urlset>
