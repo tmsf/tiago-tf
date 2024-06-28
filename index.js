@@ -29,16 +29,18 @@ const init = async (sourceDir) => {
   createRss(sortedBlogItems);
 };
 
+const formatter = new Intl.DateTimeFormat('en-GB', {
+  dateStyle: 'short',
+  timeStyle: 'long',
+  timeZone: 'Europe/Madrid',
+})
+
 const getMdMetadata = async (item) => {
   // Get file stats synchronously
   const stats = fs.statSync(`./blog-builder/${item}`);
 
   // Access mtime (last modified time)
-  const formatter = new Intl.DateTimeFormat('en-GB', {
-    dateStyle: 'short',
-    timeStyle: 'long',
-    timeZone: 'Europe/Madrid',
-  })
+  
   // const modifiedDate = formatter.format(stats.mtime);
   // const createdDate = formatter.format(stats.birthtime);
   const modifiedDate = (stats.mtime);
@@ -63,7 +65,7 @@ const createIndexMd = (blogItems) => {
   const indexData = ""
   const indexDataItems = blogItems.map((item) => {
     return `## [${item.title}](./${item.filenameExt})
-###### published: ${item.createdDate}
+###### published: ${formatter.format(item.createdDate)}
 `;
   }).join("\n");
   // console.log("indexData", indexData);
