@@ -110,7 +110,7 @@ const createRss = (blogItems) => {
         </item>`;
   }).join("\n");
 
-  fs.writeFileSync("./thoughts/rss.xml", sitemapDataHeader.concat(headerData).concat(sitemapData).concat(sitemapFooter));
+  fs.writeFileSync("./thoughts/index.xml", sitemapDataHeader.concat(headerData).concat(sitemapData).concat(sitemapFooter));
 }
 
 const writeBlogItemsToHtml = (blogItems) => {
