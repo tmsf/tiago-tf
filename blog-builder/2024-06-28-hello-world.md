@@ -35,7 +35,7 @@ Dates, I need to add creation dates.
 
 ## solution V
 
-`sitemap.xml` of course! Ok the bash file is getting out of control. Let's go to the familiar JS territory
+`sitemap.xml` of course! Ok the bash file is getting out of control. I rather do this in the JS territory where all of this feels familiar.
 
 ## solution VI
 
@@ -46,8 +46,9 @@ Let's lose some of the external libs, they're simpler to just rewrite in a new s
 
 Let's just use the same process as for the sitemap. we got it. 
 
-#### *I got it I reached perfection*.
+### I got it I reached perfection.
 
+ 
 #### who am I kidding?
 
 Let's recap. I wanted just a simple blog where I could type a couple of thoughts, no hassles of external frameworks, or writting/duplicating boilerplate and html code all the time.

@@ -50,7 +50,7 @@ const getMdMetadata = async (item) => {
   // console.log(`File was created on: ${createdDate}`);
   // console.log("stats", stats);
   let data = fs.readFileSync(`./blog-builder/${item}`, "utf8");
-  data = data.concat(`\n\n originally published: ${formatter.format(createdDate)}\n`);
+  data = data.concat(`#### _______ \n \n\n\n originally published: ${formatter.format(createdDate)}\n`);
   data = data.concat(`\n last updated: ${formatter.format(modifiedDate)} \n\n`);
   // console.log("data", data);
 
