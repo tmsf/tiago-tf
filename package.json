@@ -1,8 +1,6 @@
 {
   "type": "module",
   "dependencies": {
-    "markdown-to-html-via-template": "^0.0.5",
-    "marked": "^13.0.1",
-    "wmdc": "^1.0.0"
+    "marked": "^13.0.1"
   }
 }

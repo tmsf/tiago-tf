@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/dist/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/dist/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/dist/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/dist/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/dist/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/dist/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/dist/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/dist/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/dist/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/dist/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/dist/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/dist/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/dist/favicon/favicon-16x16.png">
+<link rel="manifest" href="/assets/dist/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/assets/dist/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+
+<meta name="description" content="Tiago Fernandes - thoughts">
+<meta name="viewport" content="initial-scale = 1.0, maximum-scale = 5.0" />
+<link rel='stylesheet' href='/assets/styles/thoughts.css' type='text/css'>
+<html lang="en">
+
+<main>
+  <section>
+    <h1 class='title font-smoothing'>
+      <a href="/"> Tiago Fernandes </a>
+    </h1>
+    <h2 class='title font-smoothing'>
+      <a href="/thoughts"> thoughts</a>
+    </h2> 
+  </section>
+  <section class="container">  
+<h1>hello world</h1>
+<p>Oh boy, the amount of yak shaving that happened in order to get this note taking thingy up and running.</p>
+<p>I wanted a simple, easy to create, edit, and delete posts within this static website. I didn&#39;t want no &quot;smart&quot; tools like jekyll, hugo, or anything like it. </p>
+<h2>solution I</h2>
+<p>I&#39;ve started digging and found a simple &quot;md to html&quot; converters on github. </p>
+<p>I&#39;ve found a simple transformer. Quite rudimentary that did the job. </p>
+<h3>Cool.</h3>
+<p>But then I realised that I wanted to have a simple way to duplicate the headers to match my current design. </p>
+<h2>solution II</h2>
+<p>Into github again, I&#39;ve found another library that got the templating sorted. Little bash script. </p>
+<h3>Done.</h3>
+<p>Hum.. I need an index page so I can see the post list.
+Ok, if I list the files I can automated around the npx script within the bash script. </p>
+<h3>This is starting to look complicated...</h3>
+<h2>solution III</h2>
+<p>Let&#39;s add the index file.</p>
+<h2>solution IV</h2>
+<p>Dates, I need to add creation dates.</p>
+<h2>solution V</h2>
+<p><code>sitemap.xml</code> of course! Ok the bash file is getting out of control. Let&#39;s go to the familiar JS territory</p>
+<h2>solution VI</h2>
+<p>Let&#39;s lose some of the external libs, they&#39;re simpler to just rewrite in a new script. 
+<em>RSS is also a cool feature don&#39;t forget to add it!</em></p>
+<h2>solution VII</h2>
+<p>Let&#39;s just use the same process as for the sitemap. we got it. </p>
+<h4><em>I got it I reached perfection</em>.</h4>
+<h4>who am I kidding?</h4>
+<p>Let&#39;s recap. I wanted just a simple blog where I could type a couple of thoughts, no hassles of external frameworks, or writting/duplicating boilerplate and html code all the time.</p>
+<p>Where did I get to?</p>
+<p>The script:</p>
+<ul>
+<li><p>➕ A node script that has an external dependency only. Doesn&#39;t need a full framework to render a dozen html files.</p>
+</li>
+<li><p>➖ for having a dependency and a preprocess step</p>
+</li>
+</ul>
+<p>The blog requirements: </p>
+<ul>
+<li><p>automatic timestamps in the files</p>
+<ul>
+<li>➕ it looks cool, and its quite easy to get a professional look, it will be useful for sitemap, rss. </li>
+<li>➖ spent too much time on it to look... like a timestamp.</li>
+</ul>
+</li>
+<li><p><code>sitemap.xml</code> </p>
+<ul>
+<li>➕ it just worked with a simple iteration on files.</li>
+</ul>
+</li>
+<li><p><code>rss.xml</code></p>
+<ul>
+<li>➕ just copied sitemaps&#39;s and got it</li>
+</ul>
+</li>
+</ul>
+<h4>Am I happy?</h4>
+<p>Of course not. The current css is wonky. The script is a mess of names and functions that make sense to no one. And I&#39;ll definetely will do all possible things besides writing on it.</p>
+<p>Oh and for now, I&#39;m right there in the bottom right 👇. </p>
+<img src="https://rakhim.org/images/honestly-undefined/blogging.jpg" alt="https://rakhim.org/images/honestly-undefined" width="400" margin="1em"/>
+
+
+<p>See you soon.</p>
+<p> originally published: 28/06/2024, 21:42:54 CEST</p>
+<p> last updated: 29/06/2024, 12:53:34 CEST </p>
+
+</section>
+</main>
+
+</html>
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "url": "https://www.tiago.tf/",
+    "description": "Tiago Fernandes - thoughts",
+    "author": {
+      "@type": "Person",
+      "image": "https://avatars2.githubusercontent.com/u/846963",
+      "name": "Tiago Fernandes",
+      "jobTitle": "Tech Lead / Staff Engineer",
+      "sameAs": [
+        "https://mastodon.social/@tiago",
+        "https://github.com/tmsf",
+        "https://www.linkedin.com/in/tmsfernandes"
+      ]
+    }
+  }
+</script>
+
+<script src="../assets/scripts/utils.js"></script>

@@ -2,35 +2,11 @@
         <link>http://www.tiago.tf/thoughts</link>
         <description>Tiago Fernandes - thoughts</description>
         <language>en-gb</language>
-        <lastBuildDate>2024-06-28T19:14:40.764Z</lastBuildDate><item>
-            <title>Heres the lastest post</title>
-            <link>http://www.tiago.tf/thoughts/2024-06-28-test-test</link>
+        <lastBuildDate>2024-06-29T10:54:16.155Z</lastBuildDate><item>
+            <title>hello world</title>
+            <link>http://www.tiago.tf/thoughts/2024-06-28-hello-world</link>
             <description>This is the description for the first article.</description>
             <author>Tiago Fernandes</author>
-            <pubDate>2024-06-28T19:14:24.988Z</pubDate>
-            <guid>http://www.tiago.tf/thoughts/2024-06-28-test-test</guid>
-        </item>
-<item>
-            <title>should be the thrid</title>
-            <link>http://www.tiago.tf/thoughts/thrid_example</link>
-            <description>This is the description for the first article.</description>
-            <author>Tiago Fernandes</author>
-            <pubDate>2024-06-28T16:41:27.111Z</pubDate>
-            <guid>http://www.tiago.tf/thoughts/thrid_example</guid>
-        </item>
-<item>
-            <title>should be the seconde</title>
-            <link>http://www.tiago.tf/thoughts/seconde_example</link>
-            <description>This is the description for the first article.</description>
-            <author>Tiago Fernandes</author>
-            <pubDate>2024-06-27T20:48:27.477Z</pubDate>
-            <guid>http://www.tiago.tf/thoughts/seconde_example</guid>
-        </item>
-<item>
-            <title>heres a title</title>
-            <link>http://www.tiago.tf/thoughts/example</link>
-            <description>This is the description for the first article.</description>
-            <author>Tiago Fernandes</author>
-            <pubDate>2024-06-27T19:06:45.008Z</pubDate>
-            <guid>http://www.tiago.tf/thoughts/example</guid>
+            <pubDate>2024-06-28T19:42:54.089Z</pubDate>
+            <guid>http://www.tiago.tf/thoughts/2024-06-28-hello-world</guid>
         </item></channel></rss>

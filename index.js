@@ -46,9 +46,9 @@ const getMdMetadata = async (item) => {
   const modifiedDate = (stats.mtime);
   const createdDate = (stats.birthtime);
 
-  console.log(`File was last modified on: ${modifiedDate}`);
-  console.log(`File was created on: ${createdDate}`);
-  console.log("stats", stats);
+  // console.log(`File was last modified on: ${modifiedDate}`);
+  // console.log(`File was created on: ${createdDate}`);
+  // console.log("stats", stats);
   let data = fs.readFileSync(`./blog-builder/${item}`, "utf8");
   data = data.concat(`\n\n originally published: ${formatter.format(createdDate)}\n`);
   data = data.concat(`\n last updated: ${formatter.format(modifiedDate)} \n\n`);
