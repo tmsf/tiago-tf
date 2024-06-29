@@ -77,9 +77,11 @@ The blog requirements:
 Of course not. The current css is wonky. The script is a mess of names and functions that make sense to no one. And I'll definetely will do all possible things besides writing on it.
 
 
-Oh and for now, I'm right there in the bottom right 👇. 
+Oh and for now, I'm right there in the bottom right 👇 [Honestly Undefined]. 
 
-<img src="https://rakhim.org/images/honestly-undefined/blogging.jpg" alt="https://rakhim.org/images/honestly-undefined" width="400" margin="1em"/>
+<img src="https://rakhim.org/images/honestly-undefined/blogging.jpg" alt="https://rakhim.org/honestly-undefined/19/" width="400" margin="1em"/>
+
+[Honestly Undefined]: https://rakhim.org/honestly-undefined/19/
 
 
 See you soon.
