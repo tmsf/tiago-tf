@@ -100,10 +100,11 @@ const createRss = (blogItems) => {
 
   const sitemapData = blogItems.map((item) => {
     // console.log("item", item);
+    // TODO create a description as a summary?
     return `<item>
             <title>${item.title}</title>
             <link>http://www.tiago.tf/thoughts/${item.file}</link>
-            <description>This is the description for the first article.</description>
+            <description><![CDATA[${markdownify(item.data)}]]></description>
             <author>Tiago Fernandes</author>
             <pubDate>${item.createdDate.toISOString()}</pubDate>
             <guid>http://www.tiago.tf/thoughts/${item.file}</guid>
