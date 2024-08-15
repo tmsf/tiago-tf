@@ -5,7 +5,7 @@ const init = async (sourceDir) => {
   const directory = fs.readdirSync(sourceDir)
   await directory.forEach(async (filenameExt) => {
     if (filenameExt.endsWith(".md") && filenameExt !== "index.md") {
-      // console.log("---", filenameExt);
+      console.log("---", filenameExt);
       const [title, data, file, createdDate, modifiedDate, stats] = await getMdMetadata(filenameExt);
       blogItems.push({ title, file, filenameExt, createdDate, modifiedDate, data, stats });
     }
@@ -40,7 +40,7 @@ const getMdMetadata = async (item) => {
   const stats = fs.statSync(`./blog-builder/${item}`);
 
   // Access mtime (last modified time)
-  
+
   // const modifiedDate = formatter.format(stats.mtime);
   // const createdDate = formatter.format(stats.birthtime);
   const modifiedDate = (stats.mtime);
@@ -67,11 +67,11 @@ const createIndexMd = (blogItems) => {
     return `## [${item.title}](./${item.filenameExt})
 ###### published: ${formatter.format(item.createdDate)}
 `;
-  }).join("\n");
+  }).join("\n\n\n\n");
   // console.log("indexData", indexData);
   const template = fs.readFileSync('./blog-builder/templates/template.html', "utf8");
 
-  writeMdToHtmlFile(indexData.concat(indexDataItems), 'index', template)
+  writeMdToHtmlFile(indexData.concat(indexDataItems), 'index', "thoughts", template)
 }
 
 const createSitemapBlog = (blogItems) => {
@@ -117,13 +117,14 @@ const writeBlogItemsToHtml = (blogItems) => {
   // console.log("writeBlogItemsToHtml", blogItems.length)
   const template = fs.readFileSync('./blog-builder/templates/template.html', "utf8");
   return blogItems.forEach((blogItem) => {
-    writeMdToHtmlFile(blogItem.data, blogItem.file, template)
+    writeMdToHtmlFile(blogItem.data, blogItem.file, blogItem.title, template)
   });
 }
 
 
-const writeMdToHtmlFile = (mdData, filename, template) => {
+const writeMdToHtmlFile = (mdData, filename, title, template) => {
   let output = template.replace("{{markdown}}", markdownify(mdData));
+  output = output.replace("{{title}}", title);
   output = output.replace(/href="(.*)\.md"/g, 'href="$1.html"');
   fs.writeFileSync(`./thoughts/${filename}.html`, output);
 }

@@ -14,3 +14,8 @@ npm install
 
 node index.js
 ```
+
+
+# TODO for the blog
+
+- images are resizable depending on the screen size
