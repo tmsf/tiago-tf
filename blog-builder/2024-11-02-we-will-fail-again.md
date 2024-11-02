@@ -13,7 +13,7 @@ Whilst providing a team update, where I was quite happy with the overall progres
 
 ___
 
-#### We will eventually fail again, but we'll fail differently!
+**We will eventually fail again, but we'll fail differently!**
 ___
 
 Failure is inevitable, even more so if you're facing a lot of unknown and new situations. 

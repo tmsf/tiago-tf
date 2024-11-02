@@ -124,6 +124,15 @@ video {
   vertical-align: baseline;
   color: var(--text-color);
 }
+/* for ** ** md tags */
+strong {
+  font-weight: bolder;
+}
+
+hr {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
 
 html {
   padding: 2em;
