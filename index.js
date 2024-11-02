@@ -5,21 +5,17 @@ const init = async (sourceDir) => {
   const directory = fs.readdirSync(sourceDir)
   await directory.forEach(async (filenameExt) => {
     if (filenameExt.endsWith(".md") && filenameExt !== "index.md") {
-      console.log("---", filenameExt);
       const [title, data, file, createdDate, modifiedDate, stats] = await getMdMetadata(filenameExt);
       blogItems.push({ title, file, filenameExt, createdDate, modifiedDate, data, stats });
     }
-    // await organiseImage(item, sourceDir);
   });
 
   // Sort blog items by created date - newest first
   const sortedBlogItems = blogItems.sort((a, b) => {
     return (new Date(b.stats.birthtime) - new Date(a.stats.birthtime));
-  })//.reverse();
-
-  // console.log("blogItems", sortedBlogItems);
-
-  const blogIndex = createIndexMd(sortedBlogItems);
+  })
+  
+  const blogIndex = createBlogIndexHtml(sortedBlogItems);
   const sitemapBlog = createSitemapBlog(sortedBlogItems);
   // TODO
   // escrever para ficheiro md -> md data c/ metadata -> html. https://github.com/zuedev/markdown-to-html-via-template/blob/main/src/index.js 
@@ -36,41 +32,27 @@ const formatter = new Intl.DateTimeFormat('en-GB', {
 })
 
 const getMdMetadata = async (item) => {
-  // Get file stats synchronously
   const stats = fs.statSync(`./blog-builder/${item}`);
-
-  // Access mtime (last modified time)
-
-  // const modifiedDate = formatter.format(stats.mtime);
-  // const createdDate = formatter.format(stats.birthtime);
   const modifiedDate = (stats.mtime);
   const createdDate = (stats.birthtime);
 
-  // console.log(`File was last modified on: ${modifiedDate}`);
-  // console.log(`File was created on: ${createdDate}`);
-  // console.log("stats", stats);
   let data = fs.readFileSync(`./blog-builder/${item}`, "utf8");
-  data = data.concat(`#### _______ \n \n\n\n originally published: ${formatter.format(createdDate)}\n`);
-  data = data.concat(`\n last updated: ${formatter.format(modifiedDate)} \n\n`);
-  // console.log("data", data);
-
+  data = data.concat(`###### _______ \n ###### published: ${formatter.format(createdDate)}\n`);
+  data = data.concat(`\n ###### updated: ${formatter.format(modifiedDate)} \n`);
   const title = data.match(/^# (.*)$/m)[1];
-  // console.log("title", title);
   const file = item.replace(".md", "");
-  // console.log("makre--------", markdownify(data))
   return [title, data, file, createdDate, modifiedDate, stats];
 }
 
-const createIndexMd = (blogItems) => {
+const createBlogIndexHtml = (blogItems) => {
   const indexData = ""
   const indexDataItems = blogItems.map((item) => {
     return `## [${item.title}](./${item.filenameExt})
 ###### published: ${formatter.format(item.createdDate)}
 `;
   }).join("\n\n\n\n");
-  // console.log("indexData", indexData);
   const template = fs.readFileSync('./blog-builder/templates/template.html', "utf8");
-
+  
   writeMdToHtmlFile(indexData.concat(indexDataItems), 'index', "thoughts", template)
 }
 
@@ -79,12 +61,12 @@ const createSitemapBlog = (blogItems) => {
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">`
   const sitemapFooter = `</urlset>`
 
-  const rssItems = blogItems.map((item) => {
+  const sitemapItems = blogItems.map((item) => {
     // console.log("item", item);
     return `<url><loc>https://www.tiago.tf/thoughts/${item.file}.html</loc><lastmod>${item.modifiedDate.toISOString()}</lastmod></url>`;
   }).join("\n");
 
-  fs.writeFileSync("./thoughts/sitemap.xml", sitemapDataHeader.concat(rssItems).concat(sitemapFooter));
+  fs.writeFileSync("./thoughts/sitemap.xml", sitemapDataHeader.concat(sitemapItems).concat(sitemapFooter));
 }
 
 const createRss = (blogItems) => {
@@ -98,8 +80,7 @@ const createRss = (blogItems) => {
         <lastBuildDate>${new Date().toISOString()}</lastBuildDate>`
 
 
-  const sitemapData = blogItems.map((item) => {
-    // console.log("item", item);
+  const rssItem = blogItems.map((item) => {
     // TODO create a description as a summary?
     return `<item>
             <title>${item.title}</title>
@@ -111,7 +92,7 @@ const createRss = (blogItems) => {
         </item>`;
   }).join("\n");
 
-  fs.writeFileSync("./thoughts/index.xml", sitemapDataHeader.concat(headerData).concat(sitemapData).concat(sitemapFooter));
+  fs.writeFileSync("./thoughts/index.xml", sitemapDataHeader.concat(headerData).concat(rssItem).concat(sitemapFooter));
 }
 
 const writeBlogItemsToHtml = (blogItems) => {

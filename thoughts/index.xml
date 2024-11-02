@@ -2,7 +2,31 @@
         <link>http://www.tiago.tf/thoughts</link>
         <description>Tiago Fernandes - thoughts</description>
         <language>en-gb</language>
-        <lastBuildDate>2024-08-15T18:22:25.006Z</lastBuildDate><item>
+        <lastBuildDate>2024-11-02T10:56:30.151Z</lastBuildDate><item>
+            <title>We will fail again </title>
+            <link>http://www.tiago.tf/thoughts/2024-11-02-we-will-fail-again</link>
+            <description><![CDATA[<h1>We will fail again</h1>
+<p>My team recently started to work on their Agile methodologies. Given the nature of the product we are <strong>forced to make a lot of discovery, customer research, and technical experimentation before we jump into delivery</strong>. For that reason we&#39;ve chosen to follow the Kanban methodology.</p>
+<p>Our team is a mix of different profiles and experiences. Most of them weren&#39;t familiar with Kanban.
+So adding to the overall day to day work, development, UX, product, we had to rethink our ways of working, and try to adjust it as best as we can to our delivery. </p>
+<p>As with any change, we have to try and fail. In each milestone  we&#39;ve delivered, we&#39;ve been getting a little better. After a couple of milestones we&#39;ve noticed improvements such as fewer bugs, fewer lingering tickets on the board, and the product getting into its appropriate shape faster.</p>
+<p>But obviously we&#39;ve failed in x, y, and z points. </p>
+<p>Whilst providing a team update, where I was quite happy with the overall progress, I didn&#39;t shy away from said failures, and the future ones: </p>
+<hr>
+<h4><em>We will eventually fail again, but we&#39;ll fail differently!</em></h4>
+<hr>
+<p>Failure is inevitable, even more so if you&#39;re facing a lot of unknown and new situations. </p>
+<p>Failing on things that you&#39;ve already experienced can be at least prepared for,and mitigations can be set to try to avoid its most grave outcomes. </p>
+<p>Learning from our mistakes, creating mechanisms to avoid them, and being open to uncertainty are key to deal with this product work.</p>
+<h6>_______</h6>
+<h6>published: 02/11/2024, 10:49:41 CET</h6>
+<h6>updated: 02/11/2024, 11:55:35 CET</h6>
+]]></description>
+            <author>Tiago Fernandes</author>
+            <pubDate>2024-11-02T09:49:41.838Z</pubDate>
+            <guid>http://www.tiago.tf/thoughts/2024-11-02-we-will-fail-again</guid>
+        </item>
+<item>
             <title>hello world</title>
             <link>http://www.tiago.tf/thoughts/2024-06-28-hello-world</link>
             <description><![CDATA[<h1>hello world</h1>
@@ -66,9 +90,9 @@ Ok, if I list the files I can automated around the npx script within the bash sc
 <img src="https://rakhim.org/images/honestly-undefined/blogging.jpg" alt="https://rakhim.org/honestly-undefined/19/" width="400" margin="1em"/>
 
 <p>See you soon.</p>
-<h4>_______</h4>
-<p> originally published: 28/06/2024, 21:42:54 CEST</p>
-<p> last updated: 29/06/2024, 13:11:40 CEST </p>
+<h6>_______</h6>
+<h6>published: 28/06/2024, 21:42:54 CEST</h6>
+<h6>updated: 29/06/2024, 13:11:40 CEST</h6>
 ]]></description>
             <author>Tiago Fernandes</author>
             <pubDate>2024-06-28T19:42:54.089Z</pubDate>
