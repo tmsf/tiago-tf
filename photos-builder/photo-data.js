@@ -1,84 +1,84 @@
 export const photoData = [
     {
-        src: "assets/photos/caminha-II-2024.jpg",
+        src: "caminha-II-2024.jpg",
         caption: "Caminha, Portugal - 2024",
         alt: "Caminha, Portugal - 2024",
         name: "caminha-ii-2024"
     },
     {
-        src: "assets/photos/caminha-2024.jpg",
+        src: "caminha-2024.jpg",
         caption: "Caminha, Portugal - 2024",
         alt: "Fort in a island in the ocean seen from the shore. Caminha, Portugal - 2024",
         name: "caminha-i-2024"
     },
     {
-        src: "assets/photos/paris-2015.png",
+        src: "paris-2015.png",
         caption: "Paris, France - 2015",
         alt: "Paris, France - 2015",
         name: "paris-2015"
     },
     {
-        src: "assets/photos/barcelona-2015.jpg",
+        src: "barcelona-2015.jpg",
         caption: "Barcelona, España - 2015",
         alt: "Barcelona, España - 2015",
         name: "barcelona-2015"
     },
     {
-        src: "assets/photos/chamonix-2017.jpg",
+        src: "chamonix-2017.jpg",
         caption: "Chamonix, France - 2017",
         alt: "Chamonix, France - 2017",
         name: "chamonix-2017"
     },
     {
-        src: "assets/photos/lisboa-2019.jpg",
+        src: "lisboa-2019.jpg",
         caption: "Lisboa, Portugal - 2019",
         alt: "Lisboa, Portugal - 2019",
         name: "lisboa-2019"
     },
     {
-        src: "assets/photos/malta-2017.jpg",
+        src: "malta-2017.jpg",
         caption: "Valleta, Malta - 2017",
         alt: "Valleta, Malta - 2017",
         name: "malta-2017"
     },
     {
-        src: "assets/photos/malta-gozo-2017.jpg",
+        src: "malta-gozo-2017.jpg",
         caption: "Gozo, Malta - 2017",
         alt: "Gozo, Malta - 2017",
         name: "malta-gozo-2017"
     },
     {
-        src: "assets/photos/zaragoza-ii-2018.jpg",
+        src: "zaragoza-ii-2018.jpg",
         caption: "Zaragoza, España - 2019",
         alt: "Zaragoza, España - 2019",
         name: "zaragoza-2018"
     },
     {
-        src: "assets/photos/barcelona-2009.jpg",
+        src: "barcelona-2009.jpg",
         caption: "Barcelona, España - 2009",
         alt: "Barcelona, España - 2009",
         name: "barcelona-2009"
     },
     {
-        src: "assets/photos/caminha-2010.jpg",
+        src: "caminha-2010.jpg",
         caption: "Caminha, Portugal - 2010",
         alt: "Caminha, Portugal - 2010",
         name: "caminha-2010"
     },
     {
-        src: "assets/photos/venezia-iii-2015.jpg",
+        src: "venezia-iii-2015.jpg",
         caption: "Venezia, Italia - 2015",
         alt: "Venezia, Italia - 2015",
         name: "venezia-iii-2015"
     },
     {
-        src: "assets/photos/venezia-ii-2015.jpg",
+        src: "venezia-ii-2015.jpg",
         caption: "Venezia, Italia - 2015",
         alt: "Venezia, Italia - 2015",
         name: "venezia-ii-2015"
     },
     {
-        src: "assets/photos/venezia-i-2015.jpg",
+        src: "venezia-i-2015.jpg",
         caption: "Venezia, Italia - 2015",
         alt: "Venezia, Italia - 2015",
         name: "venezia-i-2015"

@@ -6,16 +6,25 @@ const listTemplate = fs.readFileSync('./photos-builder/templates/template-list.h
 
 const photoTemplate = (src, caption, alt) => `<section class='myphoto'>
     <figure>
-      <img loading=lazy src="../${src}" alt="${alt}">
+      <img loading=lazy src="../assets/photos/${src}" alt="${alt}">
       <figcaption>${caption}</figcaption>
     </figure>
   </section>`
 
+/**
+ * mobile photos are 600px height as pattern
+ * 
+ * @param {*} src 
+ * @param {*} caption 
+ * @param {*} alt 
+ * @param {*} name 
+ * @returns 
+ */
 const photoListItemTemplate = (src, caption, alt, name) => `
     <a href="./${name}.html" class="photo-card">
         
     <div>
-            <img loading=lazy src="../${src}" alt="${alt}">
+            <img loading=lazy src="../assets/photos/m/${src}" alt="${alt}">
         
     </div>
     </a>`
