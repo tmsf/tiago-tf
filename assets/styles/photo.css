@@ -42,3 +42,32 @@ figcaption {
     padding: 0;
   }
 }
+
+/* Photo list grid */
+
+.photo-card {
+  border: 0.1px solid var(--border-color);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  max-width: 200px;
+  max-height: 200px;
+  flex-flow: row;
+}
+
+.photo-card img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.photo-cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+  grid-gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

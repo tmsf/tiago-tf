@@ -1,5 +1,8 @@
 {
   "type": "module",
+  "scripts": {
+    "photo": "node photo.js"
+  },
   "dependencies": {
     "marked": "^13.0.1"
   }
