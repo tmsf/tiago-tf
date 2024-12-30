@@ -22,11 +22,7 @@ const photoTemplate = (src, caption, alt) => `<section class='myphoto'>
  */
 const photoListItemTemplate = (src, caption, alt, name) => `
     <a href="./${name}.html" class="photo-card">
-        
-    <div>
             <img loading=lazy src="../assets/photos/m/${src}" alt="${alt}">
-        
-    </div>
     </a>`
 
 const writePhotoItemHtmlFile = (item) => {

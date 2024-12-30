@@ -46,19 +46,24 @@ figcaption {
 /* Photo list grid */
 
 .photo-card {
-  border: 0.1px solid var(--border-color);
-  padding: 1rem;
+  background-color: white;
+  /* background-color: var(--border-color);*/
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
   display: flex;
   align-items: center;
   align-content: center;
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 500px;
+  max-height: 300px;
   flex-flow: row;
 }
 
 .photo-card img {
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 500px;
+  max-height: 300px;
+  background-color: white;
 }
 
 .photo-cards {
