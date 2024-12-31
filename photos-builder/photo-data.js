@@ -51,6 +51,12 @@ export const photoData = [
         src: "zaragoza-ii-2018.jpg",
         caption: "Zaragoza, España - 2019",
         alt: "Zaragoza, España - 2019",
+        name: "zaragoza-ii-2018"
+    },
+    {
+        src: "zaragoza-i-2018.jpg",
+        caption: "Zaragoza, España - 2019",
+        alt: "Zaragoza, España - 2019",
         name: "zaragoza-2018"
     },
     {
