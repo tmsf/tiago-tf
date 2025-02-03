@@ -1,5 +1,11 @@
 export const photoData = [
     {
+        src: "barcelona-2016.jpg",
+        caption: "Barcelona, España - 2016",
+        alt: "Barcelona, España - 2016",
+        name: "barcelona-2016"
+    },
+    {
         src: "london-2017.jpg",
         caption: "London, United Kingdom - 2017",
         alt: "London, United Kingdom - 2017",
