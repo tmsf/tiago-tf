@@ -20,19 +20,19 @@ As systems grew and moved away from single purpose software pieces into complex,
 
 # The nature of software
 
-## software is not immutable
+## Software is not immutable
 
 From its conception, and going through the MVP to a stable phase and further iterations, the only constant is the fact that software is always changing.
 Software faces product requirements changes, database schema changes, security updates, refactors.
 
-## entropy 
+## Entropy 
 
 Software development follows the laws of nature. Its quality gradually declines and consequently entropy arises. 
 This entropy goes by many shapes and forms: technical debt, unintended complexity, lack of documentation, half finished implementations that create confusion and misalignment on future development patterns.
 
 If these are left unattended we end up with the famous "spaghetti codebase", "the big ball of mud". This blend of everything into a paste also defined as entropy.
 
-## software is not a building
+## Software is not a building
 
 The way that we transmit our job people outside our realm is that we're builders, architects. The assumption is that we build and besides little fixer uppers buildings are built. Right?
 
@@ -41,7 +41,7 @@ After its construction a building might need a window to be fixed or a new coat 
 
 **But most definitely no builder would see as a feasible proposition moving the 3rd floor to a different lot whilst the lift must keep serving the 3rd floor after the 2nd and before the 4th.**
 
-# is it a garden, then? 
+# Is it a garden, then? 
 
 Yes! (kinda).
 
@@ -61,7 +61,7 @@ You love the results, same way that you love to work on a simple, clear, clean c
 New software requirements arise, we need to adapt the current system to accomodate those needs.
 Same way, when we need to plant a new crop we need to accomodate the soil and their surroundings to best fit them. 
 
-# is it gardening, really?  
+# Is it gardening, really?  
 
 Ok, hear me out. Gardening it's not a perfect analogy. The take to this argument is to
 
